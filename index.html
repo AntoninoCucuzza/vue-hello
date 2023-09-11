@@ -6,6 +6,38 @@
     <title>vue-hello</title>
 </head>
 <body>
+<!-- 
+
+Descrizione:
+Stampare a schermo un messaggio all’interno di un h1, utilizzando i data.
+
+Bonus:
+Aggiungere alla pagina un’immagine, presa anch’essa inserendo il percoso in una propietá dell'oggetto restituito dalla funzione data.
     
+-->
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+
+
+<h1 id="app">{{ message }}</h1>
+
+
+
+
+
+
+<script>
+
+const { createApp } = Vue
+
+createApp({
+    data() {
+        return {
+            message: '(☞ﾟヮﾟ)☞ HELLO WORLD ☜(ﾟヮﾟ☜)'
+        }
+    }
+}).mount('#app')
+
+</script>
 </body>
 </html>
